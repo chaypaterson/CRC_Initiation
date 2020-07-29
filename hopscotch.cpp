@@ -200,21 +200,21 @@ void gillespie_beans (vector<Ensemble> *tResults, int seed,
                 ie++;
             }
             if (ie > 4)
-                cout << "Error: no event generated" << endl;
+                ie = 4; // correct for long double --> double precision
             
             while ((je < 5) && (remainder > Sij[ie][je])) {
                 remainder -= Sij[ie][je];
                 je++;
             }
             if (je > 4)
-                cout << "Error: no event generated" << endl;
+                je = 4; // correct for long double --> double precision
             
             while ((ke < 2) && (remainder > S[ie][je][ke])) {
                 remainder -= S[ie][je][ke];
                 ke++;
             }
             if (ke > 1)
-                cout << "Error: no event generated" << endl;
+                ke = 1; // correct for long double --> double precision
             
             // we now have the id of the next event:
             // ie,je,ke
@@ -248,7 +248,7 @@ void gillespie_beans (vector<Ensemble> *tResults, int seed,
                         remainder -= rates[ie][it];
                     }
                     if (it > 4)
-                        cout << "Error: no event generated" << endl;
+                        it = 4;
                 } else {
                     remainder -= RatesI[ie];
                     if (remainder < RatesJ[je]) {
@@ -259,7 +259,7 @@ void gillespie_beans (vector<Ensemble> *tResults, int seed,
                             remainder -= rates2[je][jt];
                         }
                         if (jt > 4)
-                            cout << "Error: no event generated" << endl;
+                            jt = 4;
                     }
                     else {
                         // kt is the hopping axis
