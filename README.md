@@ -15,7 +15,7 @@ params.h and hopscotch.cpp should be read as follows:
     4 = both copies mutated (t.s. -/-).
 
 1. How to build
----------------
+===============
 
 Dependencies
 ------------
@@ -48,7 +48,7 @@ linker to your local installation of pthreads and GSL. This will depend on
 the library directory in your Homebrew or Fink installation.
 
 2. How to run
--------------
+=============
 
 Required arguments:
 
@@ -81,7 +81,7 @@ Other optional run-time options:
 Any other options parsed in hopscotch.h are defunct, and should be ignored.
 
 3. Example
-----------
+==========
 
 The most detailed lineage-tracking data in the paper was generated with
 
