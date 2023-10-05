@@ -14,7 +14,7 @@ params.h and hopscotch.cpp should be read as follows:
     3 = one copy mutated, other chromosome lost (t.s. -/-)
     4 = both copies mutated (t.s. -/-).
 
-1. How to build
+How to build
 ===============
 
 Dependencies
@@ -47,7 +47,7 @@ Note: on MacOS, you will have to add additional arguments to point the
 linker to your local installation of pthreads and GSL. This will depend on
 the library directory in your Homebrew or Fink installation.
 
-2. How to run
+How to run
 =============
 
 Required arguments:
@@ -80,7 +80,7 @@ Other optional run-time options:
 
 Any other options parsed in hopscotch.h are defunct, and should be ignored.
 
-3. Example
+Example
 ==========
 
 The most detailed lineage-tracking data in the paper was generated with
