@@ -1,7 +1,8 @@
 hopscotch
 =========
 
-A Monte Carlo simulation suite for our 2020 paper on initiation of colorectal adenocarcinoma.
+A Monte Carlo simulation suite for [our 2020 paper on initiation of colorectal
+adenocarcinoma](https://www.pnas.org/doi/10.1073/pnas.2003771117).
 
 Note that the indices for mutation and LOH are switched relative to the main
 paper. For both APC and TP53, the indices of the different states in
